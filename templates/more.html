@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Second Page
+{% endblock %}
+
+{% block body %}
+    <p>
+        {% if new_year %}
+            <h1>Yes! Happy New Year!</h1>
+        {% else %}
+            <h1>NO, it is still to early!</h1>
+        {% endif %}
+
+    </p>
+
+    <a href="{{ url_for('index') }}">Go back</a>
+{% endblock %}
