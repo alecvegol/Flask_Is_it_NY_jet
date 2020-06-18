@@ -10,6 +10,14 @@
     </p>
 
     <a href="{{ url_for('more') }}">Click here to discover!</a>
+    <br>
+    <br>
+    
+    <form action="{{ url_for('hello') }}" method="post">
+        <input type="text" name="name" placeholder="Enter Your Name">
+        <button>Submit</button>
+    </form>
+    
 {% endblock %}
 
 
